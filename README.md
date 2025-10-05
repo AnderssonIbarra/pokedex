@@ -6,7 +6,6 @@ EL siguiente repositorio esta creado para la practica de Frontend simulando una 
 
 - Framework principal Vue.js version 3 basado en JavaScript.
 - Axios para el manejo de la peticion a la Api.
-- Vitest para hacer Unit test.
 - ESlint para detectar problemas en el código.
 
 ## Estructura del código
