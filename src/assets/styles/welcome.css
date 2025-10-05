@@ -1,0 +1,61 @@
+.welcome-section{
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  justify-content: center;
+  align-items: center;
+
+}
+.icons{
+  position: relative;
+  width: 325px;
+  height: 288px;
+}
+.icon-circule {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.icon-pikachu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-47%, -60%);
+}
+.title {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: #353535;
+}
+.description {
+  width: 315px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #5E5E5E;
+  margin-top: 10px;
+}
+.btn-get-started{
+  cursor: pointer;
+  border:none;
+  border-radius: 60px;
+  padding-block: 11px;
+  padding-inline: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #F22539;
+}
+.btn-get-started:active{
+  background-color: #C00E20;
+}
+
+
+@media (min-width: 768px) {
+  .description {
+    width: 570px;
+  }
+}

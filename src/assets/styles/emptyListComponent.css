@@ -1,0 +1,33 @@
+.empty-list-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #353535;
+  margin: 10px;
+}
+.subtitle {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #5E5E5E;
+}
+.btn-back-home {
+  border: 0;
+  padding: 11px 20px;
+  background-color: #F22539;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 60px;
+  cursor: pointer;
+}
+.btn-back-home:active {
+  background-color: #C00E20;
+}

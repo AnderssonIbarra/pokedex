@@ -1,0 +1,38 @@
+.list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+  margin-bottom: 90px;
+}
+.list-pokemones {
+  width: 315px;
+}
+.pokemones-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 8px;
+  background-color: #FFFFFF;
+  margin-top:10px;
+  border-radius: 8px;
+}
+.btn-pokemon {
+  color: #353535;
+  background-color: #FFFFFF;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 500;
+}
+.btn-fav {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .list-pokemones {
+    width: 570px;
+  }
+}
