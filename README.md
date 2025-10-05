@@ -1,19 +1,28 @@
-# pokedex
+# Pokedex
 
-This template should help get you started developing with Vue 3 in Vite.
+EL siguiente repositorio esta creado para la practica de Frontend simulando una Pokédex, la información es tomada de la api [PokéApi](https://pokeapi.co/).
 
-## Recommended IDE Setup
+## Tecnologias
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Framework principal Vue.js version 3 basado en JavaScript.
+- Axios para el manejo de la peticion a la Api.
+- Vitest para hacer Unit test.
+- ESlint para detectar problemas en el código.
 
-## Recommended Browser Setup
+## Estructura del código
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+La estructura del código esta basada en componentes para hacer la página lo mas reutilizable posible, es una single page application SPA.
+
+El componente principal es App.vue, donde se encuentran llamados otros 3 componentes.
+
+- Welcome es la vista de la página principal, donde se da la bienvenida a la pagina
+- Loading es la vista de carga de la aplicación.
+- FullListPokemon es la vista principal en donde esta la funcionalidad de la página.
+  - Los componentes que componen FullListPokemon se encuentran en la carpeta Pokemones.
+
+Se utilizo la comunicacion entre componentes (Props y emit), para el flujo de la información en la página.
+
+La carpeta mock-data esta creada para guardar mocks de la data recibida en la llamada de la Api.
 
 ## Customize configuration
 
