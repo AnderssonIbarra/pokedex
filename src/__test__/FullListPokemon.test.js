@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest'
 import { shallowMount } from '@vue/test-utils'
-import FullListPokemon from '../components/FullListPokemon.vue'
+import FullListPokemon from '../components/AppPrincipal.vue'
 
 describe('FullListPokemon', () => {
   test('Should render with default values', () => {
