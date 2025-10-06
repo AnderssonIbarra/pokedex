@@ -18,7 +18,7 @@ La aplicación esta separada de las siguiente forma:
 
 - Carpeta **public**: Contiene imágenes y archivos públicos.
 - Carpeta **src**: Contiene la lógica de la página.
-  - Carpeta ****test****: Contiene los test de la aplicación.
+  - Carpeta \***\*test\*\***: Contiene los test de la aplicación.
   - Carpeta **assets**: Contiene los estilos y imágenes usadas en la página.
   - Carpeta **components**: Contiene los componentes que conforma la página.
     - Carpeta **ComponentsAppPrincipal**: Contiene los componentes usados en el archivo _AppPrincipal_
@@ -30,7 +30,7 @@ La aplicación esta separada de las siguiente forma:
   - Carpeta **scripts**: Contiene lógica importante de la página, como funciones y el acceso a la API.
   - Archivo **App**: el componente raíz de la página, se encuentra el contenido de la página.
   - Archivo **main**: punto de entrada de la aplicación.
-  - Archivo **index.html**: es la página web principal de la aplicación, contenido raíz de el SPA.
+- Archivo **index.html**: es la página web principal de la aplicación, contenido raíz de el SPA.
 
 El resto de archivos son de configuración, creadas automáticamente para el funcionamiento correcto de la aplicación y no deben ser modificados manualmente.
 
