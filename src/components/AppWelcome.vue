@@ -1,5 +1,5 @@
 <script setup>
-import '../assets/styles/welcome.css'
+import '../assets/styles/AppWelcome.style.css'
 
 // Importación de iconos
 import IconPikachu from './icons/IconPikachu.vue'

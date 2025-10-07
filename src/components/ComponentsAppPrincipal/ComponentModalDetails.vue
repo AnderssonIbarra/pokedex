@@ -2,7 +2,7 @@
 import { defineProps, defineEmits, ref, watch } from 'vue'
 
 // Importación de estilos
-import '@/assets/styles/modalDetails.css'
+import '@/assets/styles/componentModalDetails.style.css'
 
 //Importación de iconos
 import IconClose from '../icons/IconClose.vue'
@@ -96,11 +96,7 @@ const shareText = async () => {
 
       <!-- Sección de la imagen -->
       <div class="image-section">
-        <img
-          :src="localPokemon.image"
-          :alt="'Image the ' + localPokemon.name"
-          class="image-pokemon"
-        />
+        <img :src="localPokemon.image" :alt="'Image the ' + localPokemon.name" class="image-pokemon" />
       </div>
 
       <!-- Sección de la información del pokemon -->

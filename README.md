@@ -12,9 +12,52 @@ EL siguiente repositorio esta creado para la practica de Frontend simulando una 
 
 La estructura del código esta basada en componentes usando Composition API de vue, para hacer la página lo más reutilizable posible. Se utilizo la comunicacion entre componentes, para el flujo de la información en la página.
 
-### Estructura de archivos
+### Estructura del proyecto
 
-La aplicación esta separada de las siguiente forma:
+```text
+/
+├── public/
+│   └── favicon.svg
+├── src
+│   ├── __test__
+│   │   └── FullListPokemon.test.js
+│   ├── assets
+│   │   ├── styles
+│   │   │  ├── AppLoading.style.css
+│   │   │  ├── AppWelcome.style.css
+│   │   │  ├── componentAlerts.style.css
+│   │   │  ├── componentButtons.style.css
+│   │   │  ├── componentEmptyList.style.css
+│   │   │  ├── componentList.style.css
+│   │   │  ├── componentModalDetails.style.css
+│   │   │  ├── componentSearch.style.css
+│   │   │  └── main.style.css
+│   │   └── hero.png
+│   ├── components
+│   │   ├── ComponentsAppPrincipal
+│   │   │  ├── ComponentAlerts.vue
+│   │   │  ├── ComponentButtons.vue
+│   │   │  ├── ComponentEmptyList.vue
+│   │   │  ├── ComponentList.vue
+│   │   │  ├── ComponentModalDetails.vue
+│   │   │  └── ComponentSearch.vue
+│   │   ├── icons
+│   │   │  └── ...iconos utilizados en la aplicación
+│   │   ├── AppLoading.vue
+│   │   ├── AppPrincipal.vue
+│   │   └── AppWelcome.vue
+│   ├── mock-data
+│   │   └── ... mock de ejemplos usados en el desarrollo
+│   ├── scripts
+│   │   ├── general.functions.js
+│   │   └── pokemon.api.js
+│   ├── App.vue
+│   └── main.js
+├── index.html
+└── package.json
+```
+
+**La aplicación esta separada de las siguiente forma:**
 
 - Carpeta **public**: Contiene imágenes y archivos públicos.
 - Carpeta **src**: Contiene la lógica de la página.

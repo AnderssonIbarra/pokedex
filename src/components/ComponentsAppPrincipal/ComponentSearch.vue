@@ -2,7 +2,7 @@
 import { ref, defineEmits } from 'vue'
 
 // Importación de estilos
-import '@/assets/styles/searchComponent.css'
+import '@/assets/styles/componentSearch.style.css'
 
 // Importación de la API
 import { pokemonApi } from '@/scripts/pokemon.api'
@@ -63,13 +63,7 @@ const getPokemonSearch = async () => {
         <IconSearch class="icon-search" />
       </span>
       <!-- input de búsqueda -->
-      <input
-        type="text"
-        v-model="query"
-        placeholder="Search"
-        class="search-input"
-        @keydown.enter="getPokemonSearch"
-      />
+      <input type="text" v-model="query" placeholder="Search" class="search-input" @keydown.enter="getPokemonSearch" />
     </div>
   </section>
 </template>

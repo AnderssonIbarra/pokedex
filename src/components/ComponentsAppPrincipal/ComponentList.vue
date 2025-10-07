@@ -2,7 +2,7 @@
 import { defineProps, defineEmits, ref } from 'vue'
 
 //Importación de estilos
-import '@/assets/styles/listComponent.css'
+import '@/assets/styles/componentList.style.css'
 
 // Importación de la API
 import { pokemonApi } from '@/scripts/pokemon.api'

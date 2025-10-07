@@ -1,6 +1,6 @@
 <script setup>
 // Importación de estilos
-import '@/assets/styles/componentAlerts.css'
+import '@/assets/styles/componentAlerts.style.css'
 
 // PROPS
 const props = defineProps({

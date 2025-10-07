@@ -1,6 +1,6 @@
 <script setup>
 // Importación de estilos
-import '@/assets/styles/emptyListComponent.css'
+import '@/assets/styles/componentEmptyList.style.css'
 
 // Definición de eventos emitidos
 const emit = defineEmits(['go-back-event'])

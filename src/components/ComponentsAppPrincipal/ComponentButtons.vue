@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 
 // Importación de estilos
-import '@/assets/styles/buttonsComponent.css'
+import '@/assets/styles/componentButtons.style.css'
 
 // Importación de iconos
 import IconAll from '../icons/IconAll.vue'
@@ -34,16 +34,10 @@ const sewFavoriteList = () => {
 <template>
   <!-- Botones para cambiar entre la lista completa y la de favoritos -->
   <section class="buttons-container">
-    <button
-      :class="typeList === 'favorites' ? 'btn-active btn-all' : 'btn-all'"
-      @click="sewFullList"
-    >
+    <button :class="typeList === 'favorites' ? 'btn-active btn-all' : 'btn-all'" @click="sewFullList">
       <IconAll /> All
     </button>
-    <button
-      :class="typeList === 'full' ? 'btn-active btn-favorites' : 'btn-favorites'"
-      @click="sewFavoriteList"
-    >
+    <button :class="typeList === 'full' ? 'btn-active btn-favorites' : 'btn-favorites'" @click="sewFavoriteList">
       <IconFavorites /> Favorites
     </button>
   </section>
