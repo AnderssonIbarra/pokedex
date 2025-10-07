@@ -3,7 +3,7 @@
 import '@/assets/styles/emptyListComponent.css'
 
 // Definición de eventos emitidos
-const emit = defineEmits(['go-back-event']);
+const emit = defineEmits(['go-back-event'])
 
 // ===============================================================
 //                         MÉTODOS
@@ -11,8 +11,8 @@ const emit = defineEmits(['go-back-event']);
 
 // 'goBackEvent': Método para emitir el evento de volver a la página principal
 const goBackEvent = () => {
-  emit('go-back-event');
-};
+  emit('go-back-event')
+}
 </script>
 
 <template>

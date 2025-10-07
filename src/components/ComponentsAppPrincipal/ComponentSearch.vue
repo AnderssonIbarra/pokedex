@@ -1,20 +1,20 @@
 <script setup>
-import { ref, defineEmits } from 'vue';
+import { ref, defineEmits } from 'vue'
 
 // Importación de estilos
-import '@/assets/styles/searchComponent.css';
+import '@/assets/styles/searchComponent.css'
 
 // Importación de la API
-import { pokemonApi } from '@/scripts/pokemon.api';
+import { pokemonApi } from '@/scripts/pokemon.api'
 
 //Importación de iconos
-import IconSearch from '../icons/IconSearch.vue';
+import IconSearch from '../icons/IconSearch.vue'
 
 // Definición de eventos emitidos
-const emit = defineEmits(['data-pokemon-search', 'pokemon-not-found']);
+const emit = defineEmits(['data-pokemon-search', 'pokemon-not-found'])
 
 // Variables reactivas
-const query = ref(''); // Variable para el input de búsqueda
+const query = ref('') // Variable para el input de búsqueda
 
 // ===============================================================
 //                          MÉTODOS
@@ -23,14 +23,14 @@ const query = ref(''); // Variable para el input de búsqueda
 // 'getPokemonSearch': Método para buscar un Pokémon por nombre o ID
 const getPokemonSearch = async () => {
   // 1. Obtener la consulta y limpiar el input inmediatamente
-  const searchQuery = query.value.trim().toLowerCase();
-  query.value = '';
+  const searchQuery = query.value.trim().toLowerCase()
+  query.value = ''
 
-  if (!searchQuery) return;
+  if (!searchQuery) return
 
   try {
     // 2. Llamada asíncrona a la API
-    const response = await pokemonApi.get(`/${searchQuery}`);
+    const response = await pokemonApi.get(`/${searchQuery}`)
 
     // 3. Mapear los datos de búsqueda necesarios
     const infoPokemonSearch = {
@@ -38,22 +38,21 @@ const getPokemonSearch = async () => {
       weight: response.data.weight,
       height: response.data.height,
       types: response.data.types,
-      image: response.data.sprites.other['official-artwork'].front_default
-    };
+      image: response.data.sprites.other['official-artwork'].front_default,
+    }
 
     // 4. Emitir los datos del Pokemon encontrado
-    emit('data-pokemon-search', infoPokemonSearch);
-
+    emit('data-pokemon-search', infoPokemonSearch)
   } catch (error) {
     // 4. Manejo de errores 404
     if (error.response && error.response.status === 404) {
-      emit('pokemon-not-found');  // Emitir el evento de no encontrado
+      emit('pokemon-not-found') // Emitir el evento de no encontrado
     } else {
       // Manejo de otros errores
-      console.error("Error al buscar Pokémon:", error);
+      console.error('Error al buscar Pokémon:', error)
     }
   }
-};
+}
 </script>
 
 <template>
@@ -64,7 +63,13 @@ const getPokemonSearch = async () => {
         <IconSearch class="icon-search" />
       </span>
       <!-- input de búsqueda -->
-      <input type="text" v-model="query" placeholder="Search" class="search-input" @keydown.enter="getPokemonSearch" />
+      <input
+        type="text"
+        v-model="query"
+        placeholder="Search"
+        class="search-input"
+        @keydown.enter="getPokemonSearch"
+      />
     </div>
   </section>
 </template>

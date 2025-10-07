@@ -13,13 +13,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 8px;
-  background-color: #FFFFFF;
-  margin-top:10px;
+  background-color: #ffffff;
+  margin-top: 10px;
   border-radius: 8px;
 }
 .btn-pokemon {
   color: #353535;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: none;
   padding: 0;
   cursor: pointer;

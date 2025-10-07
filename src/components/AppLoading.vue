@@ -1,9 +1,9 @@
 <script setup>
 // Importación de estilos
-import '../assets/styles/loading.css';
+import '../assets/styles/loading.css'
 
 //Importación de iconos
-import IconLoading from './icons/IconLoading.vue';
+import IconLoading from './icons/IconLoading.vue'
 </script>
 
 <template>
