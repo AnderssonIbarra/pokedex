@@ -12,7 +12,7 @@ EL siguiente repositorio esta creado para la practica de Frontend simulando una 
 
 La estructura del código esta basada en componentes usando Composition API de vue, para hacer la página lo más reutilizable posible. Se utilizo la comunicacion entre componentes, para el flujo de la información en la página.
 
-### Estructura del proyecto
+### Estructura de las carpetas
 
 ```text
 /
